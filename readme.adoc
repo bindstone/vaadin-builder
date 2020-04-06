@@ -1,23 +1,9 @@
-build:
+POC: NOT INTEND FOR PRODUCTION
 
- sudo docker build -t bindstone/bs-vaadin-builder-15 .
+This Project is private Project to build build a Vaadin(15) Project with only the source.
 
-cli:
+Never use this build as a running build, even I don't use it, but I use it in a multi-stage build only to create the artifacts.
 
- sudo docker run -i -t bindstone/bs-vaadin-builder-15
+The Docker Artifact:
 
-remove:
-
- ../remove_container.sh bindstone/bs-vaadin-builder-15
-
-push:
-
- sudo docker push bindstone/bs-vaadin-builder-15
-
-pull:
-
- sudo docker pull bindstone/bs-vaadin-builder-15
-
-list:
-
- sudo docker images
+An example Project used:
