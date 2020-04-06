@@ -6,9 +6,10 @@ USER root
 RUN apt-get update
 RUN apt-get install software-properties-common -y
 RUN apt-get install wget -y
-RUN wget https://download.java.net/java/GA/jdk14/076bab302c7b4508975440c56f6cc26a/36/GPL/openjdk-14_linux-x64_bin.tar.gz
+#RUN wget https://download.java.net/java/GA/jdk14/076bab302c7b4508975440c56f6cc26a/36/GPL/openjdk-14_linux-x64_bin.tar.gz
+RUN wget https://download.java.net/java/GA/jdk13/5b8a42f3905b406298b72d750b6919f6/33/GPL/openjdk-13_linux-x64_bin.tar.gz
 RUN tar -xzvf *.tar.gz
-ENV JAVA_VERSION="jdk-14"
+ENV JAVA_VERSION="jdk-13"
 RUN mv $JAVA_VERSION /usr/local/share/
 RUN rm *.tar.gz
 ENV JAVA_HOME=/usr/local/share/$JAVA_VERSION
