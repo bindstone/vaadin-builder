@@ -1,0 +1,23 @@
+build:
+
+ sudo docker build -t bindstone/bs-vaadin-builder-15 .
+
+cli:
+
+ sudo docker run -i -t bindstone/bs-vaadin-builder-15
+
+remove:
+
+ ../remove_container.sh bindstone/bs-vaadin-builder-15
+
+push:
+
+ sudo docker push bindstone/bs-vaadin-builder-15
+
+pull:
+
+ sudo docker pull bindstone/bs-vaadin-builder-15
+
+list:
+
+ sudo docker images
