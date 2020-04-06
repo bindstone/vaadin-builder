@@ -1,0 +1,9 @@
+POC: NOT INTEND FOR PRODUCTION
+
+This Project is private Project to build build a Vaadin(15) Project with only the source.
+
+Never use this build as a running build, even I don't use it, but I use it in a multi-stage build only to create the artifacts.
+
+The Docker Artifact:
+
+An example Project used:
